@@ -1,0 +1,29 @@
+.todo-form {
+  display: flex;
+  gap: 14px;
+}
+
+.todo-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 20px;
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.todo-form input::placeholder {
+  color: var(--text-muted);
+}
+
+.todo-form button {
+  padding: 12px 20px;
+  font: inherit;
+  color: var(--on-primary);
+  background: var(--primary);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
