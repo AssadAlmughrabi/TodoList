@@ -1,0 +1,42 @@
+:root {
+  --bg: #fafaf8;
+  --surface: #fff;
+  --border: #e3e3e0;
+  --text: #111;
+  --text-muted: #6b6b6b;
+  --primary: #111;
+  --on-primary: #fff;
+  --selected-bg: #d6e6fb;
+  --selected-border: #a8c7f0;
+  --selected-text: #1d4f91;
+  --done: #0b6b0b;
+  --danger: #c62828;
+
+  font: 18px/1.5 system-ui, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+/* Shared style for the language and filter buttons */
+.chip {
+  padding: 8px 18px;
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.chip.selected {
+  color: var(--selected-text);
+  background: var(--selected-bg);
+  border-color: var(--selected-border);
+}
